@@ -1,0 +1,79 @@
+[{
+  "_id": {
+    "$oid": "64fc7fce7e673b231066bd6d"
+  },
+  "title": "t-shirt",
+  "description": "good t-shirt",
+  "category": "clothes",
+  "price": 30,
+  "date_added": {
+    "$date": "2023-09-09T14:23:10.908Z"
+  },
+  "__v": 0,
+  "img": "https://media.istockphoto.com/id/482948743/photo/blank-white-t-shirt-front-with-clipping-path.webp?b=1&s=170667a&w=0&k=20&c=0ZVjmNfhpgTmkvGZk2Um2UnZEdTT14rcUsQeTBmhuWA="
+},{
+  "_id": {
+    "$oid": "64fc80007e673b231066bd6e"
+  },
+  "title": "pumpkin",
+  "description": "fresh",
+  "category": "grocery",
+  "price": 10,
+  "date_added": {
+    "$date": "2023-09-09T14:24:00.554Z"
+  },
+  "__v": 0,
+  "img": "https://media.istockphoto.com/id/1424655204/photo/pumpkin-close-up.webp?b=1&s=170667a&w=0&k=20&c=RX3u4D7RHUaWl-N4KVF4Ej8yz9BlwPcJ2g3lM1h9VP4="
+},{
+  "_id": {
+    "$oid": "64fd5adb0ea7ab1270428c96"
+  },
+  "title": "Iphone",
+  "description": "14 pro amx",
+  "category": "elctronics",
+  "price": 1000,
+  "date_added": {
+    "$date": "2023-09-09T14:24:00.554Z"
+  },
+  "__v": 0,
+  "img": "https://images.macrumors.com/t/9r84bU_ZTOTrUixxwhjHUFsAvD4=/800x0/smart/article-new/2017/09/iphonexdesign.jpg?lossy"
+},{
+  "_id": {
+    "$oid": "64fd5b140ea7ab1270428c97"
+  },
+  "title": "tamato",
+  "description": "fresh tamato",
+  "category": "grocery",
+  "price": 70,
+  "date_added": {
+    "$date": "2023-09-09T14:24:00.554Z"
+  },
+  "__v": 0,
+  "img": "https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=600"
+},{
+  "_id": {
+    "$oid": "64fda14113a41422ec0dcd4b"
+  },
+  "title": "patato",
+  "description": "fresh patato",
+  "category": "grocery",
+  "price": 10,
+  "date_added": {
+    "$date": "2023-09-09T14:24:00.554Z"
+  },
+  "__v": 0,
+  "img": "https://media.istockphoto.com/id/1475113258/photo/raw-potatoes-freshly-cut-in-half-isolated-on-white-background.webp?b=1&s=612x612&w=0&k=20&c=1puUzCqolMdFTkXNb6z5WBWF00y0F917ElKt9Enc8x4="
+},{
+  "_id": {
+    "$oid": "64fda1a113a41422ec0dcd4c"
+  },
+  "title": "shorts",
+  "description": "flexible shorts",
+  "category": "clothes",
+  "price": 30,
+  "date_added": {
+    "$date": "2023-09-09T14:23:10.908Z"
+  },
+  "__v": 0,
+  "img": "https://media.istockphoto.com/id/1461577441/photo/happy-woman-during-her-morning-jogging-training-in-city-park.webp?b=1&s=170667a&w=0&k=20&c=GNGVYI7yfBFuuU7d11Z4yMw5d9x070KaY3NJCeD1Mbo="
+}]
