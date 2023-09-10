@@ -108,9 +108,7 @@ if(val)this.props.getItems(val)
                     <NavLink href="/cart">Cart  <div style={{"color":"red"}}>{this.state.quantity}</div></NavLink>
                    
                 </NavItem>
-                <NavItem className="mr-2">
-                    <NavLink href="/orders">Orders</NavLink>
-                </NavItem>
+               
                 <NavItem>
                     <Logout/>
                 </NavItem>

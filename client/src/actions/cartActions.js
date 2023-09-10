@@ -28,7 +28,6 @@ export const updateCart = (userId, productId, qty) => dispatch => {
 }
 
 export const addToCart = (id, productId, quantity) => dispatch => {
-    console.log("add",id,productId,quantity);
     axios.post(`/api/cart/${id}`, {productId, quantity})
         .then(res =>{
             if(res) dispatch({

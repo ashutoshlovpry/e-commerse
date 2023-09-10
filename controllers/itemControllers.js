@@ -1,7 +1,6 @@
 const Item = require('../models/Item');
 
 module.exports.get_items = (req,res) => {
-    console.log("res",req.body);
     Item.find({category:req.body.category}).sort({date:-1}).then(items => res.json(items));
 }
 

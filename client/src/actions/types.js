@@ -9,7 +9,6 @@ export const ADD_TO_CART = 'ADD_TO_CART';
 export const DELETE_FROM_CART = 'DELETE_FROM_CART';
 export const ORDERS_LOADING = 'ORDERS_LOADING';
 export const GET_ORDERS = 'GET_ORDERS';
-export const CHECKOUT = 'CHECKOUT';
 export const USER_LOADING = 'USER_LOADING';
 export const USER_LOADED = 'USER_LOADED';
 export const AUTH_ERROR = 'AUTH_ERROR';

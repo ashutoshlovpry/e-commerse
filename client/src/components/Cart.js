@@ -4,7 +4,6 @@ import {Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Alert, Contai
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getCart, deleteFromCart, updateCart } from '../actions/cartActions';
-import { checkout } from '../actions/orderActions'
 ;
 class Cart extends Component {
 
@@ -19,7 +18,6 @@ class Cart extends Component {
         deleteFromCart: PropTypes.func.isRequired,
         user: PropTypes.object.isRequired,
         cart: PropTypes.object.isRequired,
-        checkout: PropTypes.func.isRequired
     }
 
     getCartItems = async (id) => {
@@ -102,4 +100,4 @@ const mapStateToProps = (state) => ({
 const qtyBox = {display: "flex", justifyContent: "space-evenly", border: "1px solid #aaa", borderRadius: "5px", paddingTop: "5px", paddingBottom: "5px", marginBottom: "5px"};
 const qtyBtn = {paddingLeft: "5px", paddingRight: "5px", borderRadius: "5px", marginBottom: "0px"};
 
-export default connect(mapStateToProps, {getCart, updateCart, deleteFromCart, checkout})(Cart);
+export default connect(mapStateToProps, {getCart, updateCart, deleteFromCart})(Cart);
