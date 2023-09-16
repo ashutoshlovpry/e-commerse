@@ -9,10 +9,10 @@ export const loadUser = () => (dispatch, getState) => {
     axios.get('/api/user', tokenConfig(getState))
         .then(res => dispatch({
             type: USER_LOADED,
-            payload: res.data
+            payload: res?.data
         }))
         .catch(err => {
-            dispatch(returnErrors(err.response.data, err.response.status));
+            dispatch(returnErrors(err?.response?.data, err?.response?.status));
             dispatch({
                 type: AUTH_ERROR
             });
@@ -55,12 +55,13 @@ export const login = ({email, password}) => dispatch => {
     const body = JSON.stringify({email, password});
 
     axios.post('/api/login',body,config)
-        .then(res => dispatch({
+        .then(res => { console.log({res})
+            dispatch({
             type: LOGIN_SUCCESS,
-            payload: res.data
-        }))
+            payload: res?.data
+        })})
         .catch(err => {
-            dispatch(returnErrors(err.response.data, err.response.status, 'LOGIN_FAIL'));
+            dispatch(returnErrors(err?.response?.data, err?.response?.status, 'LOGIN_FAIL'));
             dispatch({
                 type: LOGIN_FAIL
             });

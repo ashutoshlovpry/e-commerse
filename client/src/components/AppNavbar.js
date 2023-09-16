@@ -78,12 +78,11 @@ if(val)this.props.getItems(val)
 }
     render() {
         const { isAuthenticated, user } = this.props.auth;
-        console.log('tt',this.state.quantity)
-        console.log('yy')
+       
         const authLinks = (
             <Fragment>
                 <NavItem>
-                <Input type="select" style={{'width':'200px','rightMargin':'100px'}} onChange={(e)=>this.slectCategory(e.target.value)}>
+                <Input type="select" style={{'width':'200px','marginInline':'50px'}} onChange={(e)=>this.slectCategory(e.target.value)}>
                 <option >Category</option>
                 <option value='elctronics'>Electronics</option>
             <option value='grocery'>Grocery</option>
@@ -92,11 +91,11 @@ if(val)this.props.getItems(val)
                 </NavItem>
                 <NavItem>
                 <input type='text' onChange={(e)=>this.setState({...this.state,search:e.target.value})}></input>
-                <Button onClick={this.search}>Search</Button>
+                <Button style={{'marginRight':'50px'}} onClick={this.search}>Search</Button>
                 </NavItem>
                 <NavItem>
                     <span className="navbar-text mr-3">
-                        <strong>{ user ? `Welcome ${user.name}` : ''}</strong>
+                        <strong>{ user ? `Hello ${user.name}` : ''}</strong>
                     </span>
                 </NavItem>
 
@@ -105,7 +104,7 @@ if(val)this.props.getItems(val)
                 </NavItem>
                 
                 <NavItem>
-                    <NavLink href="/cart">Cart  <div style={{"color":"red"}}>{this.state.quantity}</div></NavLink>
+                <div style={{"color":this.state.quantity>0?'red':''}}>  <NavLink href="/cart">Cart  {this.state.quantity}</NavLink></div>
                    
                 </NavItem>
                
@@ -119,7 +118,7 @@ if(val)this.props.getItems(val)
             <Fragment>
                 <NavItem>
                 {/* <Label style={{"color":"blue",'left-margin':'30%'}}>Categories</Label><NavItem></NavItem> */}
-                <Input type="select" style={{'width':'200px','rightMargin':'100px'}} onChange={(e)=>this.slectCategory(e.target.value)}>
+                <Input type="select" style={{'width':'200px','marginInline':'50px'}} onChange={(e)=>this.slectCategory(e.target.value)}>
                 <option >Category</option>
                 <option value='elctronics'>Electronics</option>
             <option value='grocery'>Grocery</option>
@@ -127,7 +126,7 @@ if(val)this.props.getItems(val)
                 </Input>
                 </NavItem>
                 <NavItem>
-                <input type='text' onChange={(e)=>this.setState({...this.state,search:e.target.value})}></input>
+                <input type='text' style={{'width':'200px','rightMargin':'50px'}} onChange={(e)=>this.setState({...this.state,search:e.target.value})}></input>
                 <Button onClick={this.search}>Search</Button>
                 </NavItem>
                 <NavItem>
@@ -143,7 +142,6 @@ if(val)this.props.getItems(val)
             <div>
                 <Navbar color="dark" dark expand="sm" className="mb-5">
                     <Container>
-                        <NavbarBrand href="/">E Commerce Store</NavbarBrand>
                         <NavbarToggler onClick={this.toggle}/>
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar> 
